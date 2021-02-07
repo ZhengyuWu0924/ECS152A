@@ -18,6 +18,8 @@ list1 = []
 list2 = []
 index = 0
 for data in data_base:
+    if(data == "\n"):
+        continue
     error_flag = 0
     ip_data = data.split()[0]
     prefix_len = int(data.split()[1])

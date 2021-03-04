@@ -1,0 +1,31 @@
+
+; <<>> DiG 9.11.3-1ubuntu1.14-Ubuntu <<>> +norecurse @b.edu-servers.net any cs.ucdavis.edu
+; (2 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21292
+;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 3, ADDITIONAL: 7
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;cs.ucdavis.edu.			IN	ANY
+
+;; AUTHORITY SECTION:
+ucdavis.edu.		172800	IN	NS	dns-two.ucdavis.edu.
+ucdavis.edu.		172800	IN	NS	dns-one.ucdavis.edu.
+ucdavis.edu.		172800	IN	NS	dns-three.ucdavis.edu.
+
+;; ADDITIONAL SECTION:
+dns-two.ucdavis.edu.	172800	IN	A	128.120.252.10
+dns-two.ucdavis.edu.	172800	IN	AAAA	2607:f810:3f0:2::2
+dns-one.ucdavis.edu.	172800	IN	A	128.120.252.9
+dns-one.ucdavis.edu.	172800	IN	AAAA	2607:f810:3f0:1::1
+dns-three.ucdavis.edu.	172800	IN	A	169.237.243.171
+dns-three.ucdavis.edu.	172800	IN	AAAA	2607:f810:ce0:10::2
+
+;; Query time: 71 msec
+;; SERVER: 2001:503:231d::2:30#53(2001:503:231d::2:30)
+;; WHEN: Wed Mar 03 16:19:59 PST 2021
+;; MSG SIZE  rcvd: 243
+

@@ -1,0 +1,40 @@
+
+; <<>> DiG 9.11.3-1ubuntu1.14-Ubuntu <<>> +norecurse @dns-two.ucdavis.edu any cs.ucdavis.edu
+; (2 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50119
+;; flags: qr aa ra; QUERY: 1, ANSWER: 10, AUTHORITY: 0, ADDITIONAL: 8
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: f87b880d7c8ec3bfd9d0363b604027f008ce4678825de2df (good)
+;; QUESTION SECTION:
+;cs.ucdavis.edu.			IN	ANY
+
+;; ANSWER SECTION:
+cs.ucdavis.edu.		28800	IN	SOA	infoblox.ucdavis.edu. netadmin.ucdavis.edu. 99033107 10800 900 1209600 900
+cs.ucdavis.edu.		28800	IN	MX	5 sfire.cs.ucdavis.edu.
+cs.ucdavis.edu.		28800	IN	TXT	"v=spf1 ip4:169.237.6.1 ip4:169.237.6.11 include:_spf.google.com ~all"
+cs.ucdavis.edu.		28800	IN	A	151.101.2.132
+cs.ucdavis.edu.		28800	IN	A	151.101.194.132
+cs.ucdavis.edu.		28800	IN	A	151.101.66.132
+cs.ucdavis.edu.		28800	IN	A	151.101.130.132
+cs.ucdavis.edu.		28800	IN	NS	dns-two.ucdavis.edu.
+cs.ucdavis.edu.		28800	IN	NS	dns-three.ucdavis.edu.
+cs.ucdavis.edu.		28800	IN	NS	dns-one.ucdavis.edu.
+
+;; ADDITIONAL SECTION:
+dns-three.ucdavis.edu.	14400	IN	AAAA	2607:f810:ce0:10::2
+dns-one.ucdavis.edu.	14400	IN	AAAA	2607:f810:3f0:1::1
+dns-two.ucdavis.edu.	14400	IN	AAAA	2607:f810:3f0:2::2
+sfire.cs.ucdavis.edu.	28800	IN	A	169.237.6.1
+dns-three.ucdavis.edu.	14400	IN	A	169.237.243.171
+dns-one.ucdavis.edu.	14400	IN	A	128.120.252.9
+dns-two.ucdavis.edu.	14400	IN	A	128.120.252.10
+
+;; Query time: 3 msec
+;; SERVER: 2607:f810:3f0:2::2#53(2607:f810:3f0:2::2)
+;; WHEN: Wed Mar 03 16:21:04 PST 2021
+;; MSG SIZE  rcvd: 508
+

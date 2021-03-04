@@ -1,0 +1,40 @@
+
+; <<>> DiG 9.11.3-1ubuntu1.14-Ubuntu <<>> +norecurse @ns1.yahoo.com any www.yahoo.com
+; (2 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 25381
+;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 5, ADDITIONAL: 10
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1272
+; COOKIE: 9d21a36b1e54511186f12ffa60402ccdaefae5c7f875c675 (good)
+;; QUESTION SECTION:
+;www.yahoo.com.			IN	ANY
+
+;; ANSWER SECTION:
+www.yahoo.com.		60	IN	CNAME	new-fp-shed.wg1.b.yahoo.com.
+
+;; AUTHORITY SECTION:
+yahoo.com.		172800	IN	NS	ns5.yahoo.com.
+yahoo.com.		172800	IN	NS	ns2.yahoo.com.
+yahoo.com.		172800	IN	NS	ns3.yahoo.com.
+yahoo.com.		172800	IN	NS	ns1.yahoo.com.
+yahoo.com.		172800	IN	NS	ns4.yahoo.com.
+
+;; ADDITIONAL SECTION:
+ns1.yahoo.com.		86400	IN	AAAA	2001:4998:130::1001
+ns2.yahoo.com.		86400	IN	AAAA	2001:4998:140::1002
+ns3.yahoo.com.		1800	IN	AAAA	2406:8600:f03f:1f8::1003
+ns5.yahoo.com.		86400	IN	AAAA	2406:2000:ff60::53
+ns1.yahoo.com.		1209600	IN	A	68.180.131.16
+ns2.yahoo.com.		1209600	IN	A	68.142.255.16
+ns3.yahoo.com.		1800	IN	A	27.123.42.42
+ns4.yahoo.com.		1209600	IN	A	98.138.11.157
+ns5.yahoo.com.		86400	IN	A	202.165.97.53
+
+;; Query time: 7 msec
+;; SERVER: 2001:4998:130::1001#53(2001:4998:130::1001)
+;; WHEN: Wed Mar 03 16:41:49 PST 2021
+;; MSG SIZE  rcvd: 384
+

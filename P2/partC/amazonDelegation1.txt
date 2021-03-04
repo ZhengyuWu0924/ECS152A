@@ -1,0 +1,26 @@
+
+; <<>> DiG 9.11.3-1ubuntu1.14-Ubuntu <<>> +norecurse @a.gtld-servers.net any amazon.com
+; (2 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49758
+;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;amazon.com.			IN	ANY
+
+;; AUTHORITY SECTION:
+amazon.com.		172800	IN	NS	pdns1.ultradns.net.
+amazon.com.		172800	IN	NS	pdns6.ultradns.co.uk.
+amazon.com.		172800	IN	NS	ns1.p31.dynect.net.
+amazon.com.		172800	IN	NS	ns3.p31.dynect.net.
+amazon.com.		172800	IN	NS	ns2.p31.dynect.net.
+amazon.com.		172800	IN	NS	ns4.p31.dynect.net.
+
+;; Query time: 23 msec
+;; SERVER: 2001:503:a83e::2:30#53(2001:503:a83e::2:30)
+;; WHEN: Wed Mar 03 16:43:24 PST 2021
+;; MSG SIZE  rcvd: 188
+

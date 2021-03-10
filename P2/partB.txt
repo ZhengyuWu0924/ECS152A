@@ -1,0 +1,10 @@
+a. I finish the code with the help from project2B_ProxyServer.pdf and https://realpython.com/python-sockets/
+In order to debug easily, I choose to hardcode my ip_address as my hostname and port number as 65432. (Refer to  https://realpython.com/python-sockets/)
+After that, I create a server socket and bind it to my ip_address and port number then I started to listen.
+According to the skeleton code, I first connent the server by using "tcpCliSock, addr = tcpSerSock.accept()", this kind of connection is only used for 
+the server to get the client. And then we can use recv funtion to get the received message and need to send them all back after reading file from the cache
+
+If the file is not found in cache, create a new client named c and connect it to the hostname and port 80, if successfully request the webserver,
+record all the data in the tmpFile to save.
+
+b. The load times of webpages from web sites become faster after caching.
